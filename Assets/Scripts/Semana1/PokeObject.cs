@@ -1,5 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Semana1
 {
@@ -9,6 +10,8 @@ namespace Assets.Scripts.Semana1
         public Color PokeAlpha;
         public Sprite PokeSprite;
         public Vector2 PokePosition;
+
+
 
 
 
