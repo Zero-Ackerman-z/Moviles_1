@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Poke2
   m_EditorClassIdentifier: 
   shapeName: Vaporeon
-  shapeSprite: {fileID: -192473363, guid: 7368206561ab25747b80b10c237e5633, type: 3}
+  shapeSprite: {fileID: -1867584506, guid: 7368206561ab25747b80b10c237e5633, type: 3}

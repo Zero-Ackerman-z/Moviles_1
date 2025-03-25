@@ -8,7 +8,7 @@ namespace Assets.Scripts.Semana1
     public class ColorConfig : ScriptableObject
     {
        
-            public string Name;
-            public Color color;
+            [SerializeField] private string Name;
+            [SerializeField] public Color color;
     }
 }

@@ -1,0 +1,114 @@
+{
+    "name": "TouchController",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "75986eea-c732-4fdc-b63f-11f79f4b8087",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Value",
+                    "id": "8e4b0b9f-1bad-459a-bdac-06cb44fd12ff",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Press",
+                    "type": "Value",
+                    "id": "a01962cb-4db6-4c66-b6f0-c3a47f2d753a",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Swipe",
+                    "type": "Value",
+                    "id": "82c718b4-9f4d-4bd9-a441-7dd48ddc4613",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DoubleTap",
+                    "type": "Value",
+                    "id": "bddb45ac-74d4-441a-9a60-7eb1848b7a27",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PositionTouch",
+                    "type": "Value",
+                    "id": "9722b2cf-9742-4b80-9fe6-302588934204",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8b1cc7a4-a4e6-47f4-982e-717a6a30a23a",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18d1f067-d835-48ce-8d3b-2caaacd7b890",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4a000f6-5569-41e0-862c-d985360894f4",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "60ec052e-5ecb-4291-aa86-babf70e85aae",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoubleTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72878f07-e71b-41ad-867a-c5fd5ef4c6df",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PositionTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

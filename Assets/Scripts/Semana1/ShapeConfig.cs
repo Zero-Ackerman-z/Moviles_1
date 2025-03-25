@@ -8,8 +8,8 @@ namespace Assets.Scripts.Semana1
     public class ShapeConfig : ScriptableObject
     {
        
-            public string shapeName;
-            public Sprite shapeSprite;
+            [SerializeField] private string shapeName;
+            [SerializeField] public Sprite shapeSprite;
  
     }
 }

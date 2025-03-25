@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4059dce93ed9b4f40a1c00978db28ea4, type: 3}
   m_Name: Color3
   m_EditorClassIdentifier: 
-  shapeName: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  Name: green
+  color: {r: 0.2705717, g: 1, b: 0, a: 1}
