@@ -2,66 +2,50 @@
 using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.Semana1
 {
     public class InputTapController : MonoBehaviour
     {
-        private TouchController touchController;
-        public TouchTester touchTester;
+        [SerializeField] private TouchTester touchTester;
+
+        private Camera mainCamera;
 
         private void Awake()
         {
-            touchController = new TouchController();
+            mainCamera = Camera.main;
         }
 
-        private void OnEnable()
+        public void OnTouch(InputAction.CallbackContext context)
         {
-            touchController.Game.Enable();
-            touchController.Game.Tap.performed += OnTap;
-            touchController.Game.DoubleTap.performed += OnDoubleTap;
-            touchController.Game.Press.canceled += OnPressCanceled;
-            touchController.Game.Swipe.performed += OnSwipe;
+            if (context.started || context.performed || context.canceled)
+            {
+                var touch = Touchscreen.current.primaryTouch;
+
+                if (touch.press.isPressed)
+                {
+                    Vector2 screenPosition = touch.position.ReadValue();
+
+                    if (IsPointerOverUI(screenPosition)) return;
+
+                    //touchTester.HandleTouch(touch.phase.ReadValue(), screenPosition);
+                }
+            }
         }
 
-        private void OnDisable()
+        private bool IsPointerOverUI(Vector2 position)
         {
-            touchController.Game.Tap.performed -= OnTap;
-            touchController.Game.DoubleTap.performed -= OnDoubleTap;
-            touchController.Game.Press.canceled -= OnPressCanceled;
-            touchController.Game.Swipe.performed -= OnSwipe;
+            PointerEventData pointerEventData = new PointerEventData(EventSystem.current)
+            {
+                position = position
+            };
 
-            touchController.Game.Disable();
-        }
+            List<RaycastResult> raycastResults = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerEventData, raycastResults);
 
-        private void OnTap(InputAction.CallbackContext context)
-        {
-            Vector3 touchPos = GetTouchPosition();
-            touchTester.CreateObject(touchPos);
-        }
-
-        private void OnDoubleTap(InputAction.CallbackContext context)
-        {
-            Vector3 touchPos = GetTouchPosition();
-            touchTester.TryDeleteObject(touchPos);
-        }
-
-        private void OnPressCanceled(InputAction.CallbackContext context)
-        {
-            touchTester.DeleteAllObjects();
-        }
-
-        private void OnSwipe(InputAction.CallbackContext context)
-        {
-            touchTester.DeleteAllObjects();
-        }
-
-        private Vector3 GetTouchPosition()
-        {
-            Vector2 screenPos = touchController.Game.Tap.ReadValue<Vector2>();
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, Camera.main.nearClipPlane));
-            worldPos.z = 0f;
-            return worldPos;
+            return raycastResults.Count > 0;
         }
     }
 }

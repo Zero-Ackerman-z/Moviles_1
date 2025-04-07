@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 22712043}
   - component: {fileID: 22712042}
   - component: {fileID: 22712041}
-  - component: {fileID: 22712044}
   m_Layer: 5
   m_Name: Color
   m_TagString: Untagged
@@ -205,13 +204,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841591903}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetColor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: fdee9b80e60e4be47a091a5e798761f3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ColorConfig, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -255,19 +254,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22712039}
   m_CullTransparentMesh: 1
---- !u!114 &22712044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22712039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38de78cbf1041ef4c96186bc56a33a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorConfig: {fileID: 11400000, guid: fdee9b80e60e4be47a091a5e798761f3, type: 2}
 --- !u!1 &30543833
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +266,6 @@ GameObject:
   - component: {fileID: 30543837}
   - component: {fileID: 30543836}
   - component: {fileID: 30543835}
-  - component: {fileID: 30543838}
   m_Layer: 5
   m_Name: Pokemon
   m_TagString: Untagged
@@ -297,14 +282,14 @@ RectTransform:
   m_GameObject: {fileID: 30543833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605402901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 699, y: 575}
+  m_AnchoredPosition: {x: 568.15, y: 575}
   m_SizeDelta: {x: 204.1459, y: 187.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30543835
@@ -351,13 +336,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841591903}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetShape
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: e5ec7c61980a4db47bb43b5d139f0ca7, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ShapeConfig, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -401,19 +386,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30543833}
   m_CullTransparentMesh: 1
---- !u!114 &30543838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30543833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3dca79549db2714c8c21149bc958325, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeConfig: {fileID: 11400000, guid: e5ec7c61980a4db47bb43b5d139f0ca7, type: 2}
 --- !u!1 &142482658
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +398,6 @@ GameObject:
   - component: {fileID: 142482662}
   - component: {fileID: 142482661}
   - component: {fileID: 142482660}
-  - component: {fileID: 142482663}
   m_Layer: 5
   m_Name: Color
   m_TagString: Untagged
@@ -496,7 +467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 142482661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0fa287bf9e47cf545b06bfdcb9806d4a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ColorConfig, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &142482661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,19 +518,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142482658}
   m_CullTransparentMesh: 1
---- !u!114 &142482663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142482658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38de78cbf1041ef4c96186bc56a33a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorConfig: {fileID: 11400000, guid: 0fa287bf9e47cf545b06bfdcb9806d4a, type: 2}
 --- !u!1 &360628114
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +530,6 @@ GameObject:
   - component: {fileID: 360628118}
   - component: {fileID: 360628117}
   - component: {fileID: 360628116}
-  - component: {fileID: 360628119}
   m_Layer: 5
   m_Name: Color
   m_TagString: Untagged
@@ -631,13 +600,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841591903}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetColor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: 7408501298d6260459e578392048cea0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ColorConfig, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -681,19 +650,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360628114}
   m_CullTransparentMesh: 1
---- !u!114 &360628119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360628114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38de78cbf1041ef4c96186bc56a33a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorConfig: {fileID: 11400000, guid: 7408501298d6260459e578392048cea0, type: 2}
 --- !u!1 &605402897
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +865,6 @@ GameObject:
   - component: {fileID: 751508445}
   - component: {fileID: 751508444}
   - component: {fileID: 751508443}
-  - component: {fileID: 751508446}
   m_Layer: 5
   m_Name: Pokemon
   m_TagString: Untagged
@@ -926,7 +881,7 @@ RectTransform:
   m_GameObject: {fileID: 751508441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605402901}
@@ -979,7 +934,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 751508444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetShape
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8840d2e30d34fe34c9bd04fc49ec9d78, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ShapeConfig, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &751508444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,19 +985,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751508441}
   m_CullTransparentMesh: 1
---- !u!114 &751508446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751508441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3dca79549db2714c8c21149bc958325, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeConfig: {fileID: 11400000, guid: 8840d2e30d34fe34c9bd04fc49ec9d78, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa890af99d29c8d4bb5c51ab548e5d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchTester: {fileID: 1330949345}
 --- !u!1 &1412072626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1205,6 @@ GameObject:
   - component: {fileID: 1412072630}
   - component: {fileID: 1412072629}
   - component: {fileID: 1412072628}
-  - component: {fileID: 1412072631}
   m_Layer: 5
   m_Name: Pokemon
   m_TagString: Untagged
@@ -1269,14 +1221,14 @@ RectTransform:
   m_GameObject: {fileID: 1412072626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605402901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1032, y: 575}
+  m_AnchoredPosition: {x: 970, y: 575}
   m_SizeDelta: {x: 204.1459, y: 187.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1412072628
@@ -1322,7 +1274,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1412072629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetShape
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b027eb6cf4fbd5b4fadf3b55ba6f9956, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ShapeConfig, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1412072629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,19 +1325,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412072626}
   m_CullTransparentMesh: 1
---- !u!114 &1412072631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412072626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3dca79549db2714c8c21149bc958325, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeConfig: {fileID: 11400000, guid: b027eb6cf4fbd5b4fadf3b55ba6f9956, type: 2}
 --- !u!1 &1539726395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1337,6 @@ GameObject:
   - component: {fileID: 1539726399}
   - component: {fileID: 1539726398}
   - component: {fileID: 1539726397}
-  - component: {fileID: 1539726400}
   m_Layer: 5
   m_Name: Color
   m_TagString: Untagged
@@ -1457,13 +1407,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841591903}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetColor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: b638b2390bf22b74aaac5d4ad94a0012, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ColorConfig, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1507,19 +1457,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539726395}
   m_CullTransparentMesh: 1
---- !u!114 &1539726400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539726395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38de78cbf1041ef4c96186bc56a33a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorConfig: {fileID: 11400000, guid: b638b2390bf22b74aaac5d4ad94a0012, type: 2}
 --- !u!1 &1638968914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1469,6 @@ GameObject:
   - component: {fileID: 1638968918}
   - component: {fileID: 1638968917}
   - component: {fileID: 1638968916}
-  - component: {fileID: 1638968919}
   m_Layer: 5
   m_Name: Pokemon
   m_TagString: Untagged
@@ -1549,14 +1485,14 @@ RectTransform:
   m_GameObject: {fileID: 1638968914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 605402901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 364, y: 575}
+  m_AnchoredPosition: {x: 146, y: 575}
   m_SizeDelta: {x: 204.1459, y: 187.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638968916
@@ -1603,13 +1539,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1841591903}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1841591904}
+        m_TargetAssemblyTypeName: Assets.Scripts.Semana1.GameConfigManager, Assembly-CSharp
+        m_MethodName: SetShape
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: 9bd44693bcb9e064ca73b9c7564a87be, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Assets.Scripts.Semana1.ShapeConfig, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1653,19 +1589,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638968914}
   m_CullTransparentMesh: 1
---- !u!114 &1638968919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638968914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3dca79549db2714c8c21149bc958325, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeConfig: {fileID: 11400000, guid: 9bd44693bcb9e064ca73b9c7564a87be, type: 2}
 --- !u!1 &1651428313
 GameObject:
   m_ObjectHideFlags: 0
